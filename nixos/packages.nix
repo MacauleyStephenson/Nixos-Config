@@ -3,8 +3,9 @@
 		allowUnfree = true;
 	};
 
-	enviroment.systemPackages = with pkgs; [
-	  #Desktop Apps
-	  discord
+	environment.systemPackages = with pkgs; [
+	  htop
+	  neofetch
+	  home-manager
 	];
 }

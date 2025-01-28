@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, inputs, ... }:
 
 {
   imports =
@@ -87,9 +87,7 @@
     isNormalUser = true;
     description = "lagann";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-    #  thunderbird
-    ];
+ 
   };
 
   # Install firefox.
@@ -97,15 +95,6 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
-  vim
-  home-manager
-  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
