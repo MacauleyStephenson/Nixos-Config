@@ -4,8 +4,13 @@
 	};
 
 	environment.systemPackages = with pkgs; [
-	  htop
+	  vim
+	  neovim
+          htop
 	  neofetch
+	  #GPU Stuff
+	  nvidia
+	  #other
 	  home-manager
 	];
 }
