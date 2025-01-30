@@ -1,4 +1,5 @@
 { config, pkgs, ...}:{
+	
 	home = { 
 		username = "lagann";
 		homeDirectory = "/home/lagann";
@@ -13,6 +14,7 @@
 	imports = [
 		./bash.nix
 		./modules
+		./home-packages.nix
 	];
 
 }
