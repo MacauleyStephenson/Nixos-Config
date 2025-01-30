@@ -2,8 +2,9 @@
 	nixpkgs.config.allowUnfree = true;
 
 
-	home.packgaes = with pkgs; [
+	home.packages = with pkgs; [
 	  #CLI utilities
 	  wget
+	  kitty
 	];
 }
