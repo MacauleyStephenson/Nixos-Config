@@ -1,6 +1,6 @@
 {
 
-	hardware.graphics{
+	hardware.graphics = {
 		enable = true;
 	};
 

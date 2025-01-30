@@ -8,8 +8,6 @@
 	  neovim
           htop
 	  neofetch
-	  #GPU Stuff
-	  nvidia
 	  #other
 	  home-manager
 	];
