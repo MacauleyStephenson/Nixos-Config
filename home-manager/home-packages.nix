@@ -3,7 +3,13 @@
 
 
 	home.packages = with pkgs; [
-	  #CLI utilities
+	#CLI utilities
 	  wget
+	
+	# WM stuff
+	libnotify
+	libsForQt5.xwaylandvideobridge
+	xdg-desktop-portal-gtk
+	xdg-desktop-portal-hyprland
 	];
 }
