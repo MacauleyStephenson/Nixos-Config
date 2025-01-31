@@ -5,10 +5,6 @@
 		homeDirectory = "/home/lagann";
 		stateVersion = "24.11";
 		
-		packages = with pkgs; [
-		  neofetch
-		  htop
-		];
 	};
 
 	imports = [
